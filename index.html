@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Función para retornar elementos de una pila</title>
+  <script src="Ejercicio1.js"></script>
+</head>
+<body>
+  <h1>Función para retornar elementos de una pila</h1>
+  
+  <button onclick="obtenerElementos()">Obtener Elementos</button>
+  
+  <script>
+    function obtenerElementos() {
+      var pila = ['Manzana', 'Cebolla', 'Apio', 'Naranja', 'Papaya', 'Sandía', 'Melón'];
+      var numero = 4;
+      var resultado = [];
+      
+      for (var i = 0; i < numero; i++) {
+        if (pila.length > 0) {
+          resultado.push(pila.pop());
+        } else {
+          break;
+        }
+      }
+      
+      console.log(resultado);
+    }
+  </script>
+</body>
+</html>
